@@ -2,6 +2,8 @@ package br.com.alura.ecommerce;
 
 import org.apache.kafka.clients.consumer.ConsumerRecord;
 
+import java.util.HashMap;
+
 
 public class FraudDetectorService {
     public static void main(String[] args) {
@@ -10,7 +12,8 @@ public class FraudDetectorService {
                 FraudDetectorService.class.getSimpleName(),
                 "ECOMMERCE2_NEW_ORDER",
                 fraudDetectorService::parse,
-                Order.class)){
+                Order.class,
+                new HashMap<String,String>())){
         service.run();
     }}
     private void parse(ConsumerRecord<String, Order> record){
