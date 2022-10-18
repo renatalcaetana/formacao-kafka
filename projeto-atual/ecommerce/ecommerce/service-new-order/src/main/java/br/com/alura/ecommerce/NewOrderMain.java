@@ -17,8 +17,7 @@ public class NewOrderMain {
                     var amount = new BigDecimal(Math.random() * 5000 + 1);
                     var order = new Order(userId, orderId, amount);
 
-
-                    var value = key + ",124444,6777777";
+                    System.out.println("Ammount:" + amount);
                     orderDispatcher.send("ECOMMERCE2_NEW_ORDER", userId, order);
 
                     var email = new Email("Teste", "Thank you for your order! We are processing your order!");
