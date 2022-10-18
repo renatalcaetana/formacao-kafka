@@ -11,7 +11,7 @@ public class EmailService {
                 EmailService.class.getSimpleName(),
                 "ECOMMERCE2_SEND_EMAIL",
                 emailService::parse,
-                Order.class,
+                Email.class,
                 new HashMap<>())){
         service.run();
     }}
