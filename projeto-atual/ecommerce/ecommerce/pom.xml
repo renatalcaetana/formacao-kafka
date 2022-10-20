@@ -26,6 +26,8 @@
         <module>service-new-order</module>
         <module>common-kafka</module>
         <module>service-log</module>
+        <module>service-user</module>
+        <module>service-user1</module>
     </modules>
 
 
