@@ -7,6 +7,7 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="service-log" />
+        <module name="service-http-ecommerce" />
         <module name="common-kafka" />
         <module name="service-user" />
         <module name="service-new-order" />
@@ -19,5 +20,10 @@
       <module name="service-user1" target="10" />
       <module name="service-users" target="10" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="service-user" options="" />
+    </option>
   </component>
 </project>
